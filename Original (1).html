@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In - Bloom Beauty Products</title>
+    <title>Sign In</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -63,27 +63,34 @@
         <div></div> <!-- Empty div to align with header in index.html -->
     </header>
     <div class="container">
-        <form id="signInForm" onsubmit="return redirect()">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required>
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required>
-            <label for="countryRegion">Country/Region:</label>
-            <input type="text" id="countryRegion" name="countryRegion" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Sign In</button>
+        <form id="signInForm" >
+<!--onsubmit="return redirect()"-->
+            <label >First Name:</label>
+            <input type="text" id="firstNameId" name="first Name" required>
+            <label >Last Name:</label>
+            <input type="text" id="lastNameId" name="last Name" required>
+            <label >Country/Region:</label>
+            <input type="text" id="countryRegionId" name="country or Region " required>
+            <label >Email:</label>
+            <input type="email" id="emailId" name="email address" required>
+            <label >Password:</label>
+            <input type="password" id="passwordId" name="password Name" required>
+            <button type="submit" id = "signin" >Sign In</button>
         </form>
     </div>
 <script>
         function redirect() {
             // Redirect to the original page
-            window.location.href = "./index.html";
+            window.location.href = "file:///C:/Users/Hp/Desktop/Login.html";
             return false; // Prevent default form submission
         }
     </script>
+<script type="text/javascript"
+        src="https://cdn.c360a.salesforce.com/beacon/c360a/c3094ced-8ad6-4ce5-a178-28cc3779f9bf/scripts/c360a.min.js">
+
+    </script>
+
+
 
 </body>
 </html>
