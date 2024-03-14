@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloom Beauty Products</title>
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloom Beauty Products</title>
+<style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -64,72 +64,76 @@
             display: flex;
             align-items: center;
         }
-
+ 
         .cart-container {
             display: flex;
             align-items: center;
         }
-
+ 
     </style>
 </head>
 <body>
-    <header>
-        <h1>Bloom Beauty Products</h1>
-        <div class="Sign-in">
-            <button onclick="redirectToSignIn()">Sign In</button>
-            
-        </div>
-        <div class="cart-container">
-	    <button class="cart"></button>
-	</div>
-    </header>
-    <div class="container">
-        <div class="product">
-            <img src="https://sdcdn.io/mac/in/mac_sku_S4K065_1x1_0.png?width=1440&height=1440" alt="Lipstick">
-            <div>
-                <h2>Lipstick</h2>
-                <p>Description: A high-quality lipstick in various shades to enhance your lips.</p>
-                <p>Price: <span id="price">$175.00</span></p>
-                <button class="add-to-cart" onclick="addToCart('lipstick')">Add to Cart</button>
-                <input type="number" id="quantityInput" value="1" min="1" max="10">
-            </div>
-        </div>
-        <div class="product">
-            <img src="https://static.thcdn.com/images/large/original//productimg/1600/1600/12765086-1834830290386011.jpg" alt="Mascara">
-            <div>
-                <h2>Mascara</h2>
-                <p>Description: Lengthening and volumizing mascara for stunning lashes.</p>
-                <p>Price: <span id="price1">$12.99</span></p>
-                <button class="add-to-cart" onclick="addToCart('mascara')">Add to Cart</button>
-                <input type="number" id="quantityInput" value="1" min="1" max="10">
-            </div>
-        </div>
-        <div class="product">
-            <img src="https://akm-img-a-in.tosshub.com/sites/gloss99/resources/202212/1261222041846.png" alt="Foundation">
-            <div>
-                <h2>Foundation</h2>
-                <p>Description: Lightweight foundation for flawless coverage.</p>
-                <p>Price: <span id="price2">$14.99</span></p>
-                <button class="add-to-cart" onclick="addToCart('foundation')">Add to Cart</button>
-                <input type="number" id="quantityInput" value="1" min="1" max="10">
-            </div>
-        </div>
-
+<header>
+<h1>Bloom Beauty Products</h1>
+<div class="Sign-in">
+<button onclick="redirectToSignIn()">Sign In</button>
+</div>
+<div class="cart-container">
+<button class="cart"></button>
+</div>
+</header>
+<div class="container">
+<div class="product">
+<img src="https://sdcdn.io/mac/in/mac_sku_S4K065_1x1_0.png?width=1440&height=1440" alt="Lipstick">
+<div>
+<h2>Lipstick</h2>
+<label>ID:</label><span id="sku1">P001</span>
+<p>Description: A high-quality lipstick in various shades to enhance your lips.</p>
+<p>Price: <span id="price1">$175.00</span></p>
+<button id="add-to-cart1" >Add to Cart</button>
+<!--onclick="addToCart('lipstick')"-->
+<input type="number" id="quantityInput1" value="1" min="1" max="10">
+</div>
+</div>
+<div class="product">
+<img src="https://static.thcdn.com/images/large/original//productimg/1600/1600/12765086-1834830290386011.jpg" alt="Mascara">
+<div>
+<h2>Mascara</h2>
+<label>ID:</label><span id="sku2">P002</span>
+<p>Description: Lengthening and volumizing mascara for stunning lashes.</p>
+<p>Price: <span id="price2">$12.99</span></p>
+<button id="add-to-cart2" onclick="addToCart('mascara')">Add to Cart</button>
+<input type="number" id="quantityInput2" value="1" min="1" max="10">
+</div>
+</div>
+<div class="product">
+<img src="https://akm-img-a-in.tosshub.com/sites/gloss99/resources/202212/1261222041846.png" alt="Foundation">
+<div>
+<h2>Foundation</h2>
+<label>ID:</label><span id="sku3">P003</span>
+<p>Description: Lightweight foundation for flawless coverage.</p>
+<p>Price: <span id="price3">$14.99</span></p>
+<button id="add-to-cart3" onclick="addToCart('foundation')">Add to Cart</button>
+<input type="number" id="quantityInput3" value="1" min="1" max="10">
+</div>
+</div>
+ 
         <!-- Add more product details as needed -->
-    </div>
-
-
+</div>
+ 
+ 
     <script>
         function redirectToSignIn() {
-            window.location.href = './Original (1).html';
+            window.location.href = 'file:///C:/Users/Hp/Desktop/Sign%20in.html';
         }
-    </script>
-    <script>
+</script>
+<script>
         function addToCart(product) {
             // Redirect to the next page with the product details
-            window.location.href = './Add to cart (1).html?product=' + product;
+            window.location.href = 'file:///C:/Users/Hp/Desktop/Add%20to%20cart.html?product=' + product;
         }
-    </script>
-
+</script>
+<script type="text/javascript" src="https://cdn.c360a.salesforce.com/beacon/c360a/c3094ced-8ad6-4ce5-a178-28cc3779f9bf/scripts/c360a.min.js">
+</script>
 </body>
 </html>
